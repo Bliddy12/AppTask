@@ -1,0 +1,515 @@
+html {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+html.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+.light-mode .bg-color {
+    background-color: white;   
+}
+.light-mode .name-right{
+    color: black;
+}
+
+.left-options {
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 350px;
+    height: 100vh;
+    border-right: 1px solid rgb(71, 71, 71);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+.light-mode .left-options {
+    background-color: rgb(255, 255, 255) ;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 350px;
+    height: 100vh;
+    border-right: 1px solid rgb(71, 71, 71);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+.light-mode .heart {
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+}
+.light-mode .bi:not(.heart-icon) {
+    color: black;
+}
+.light-mode .instagram-icon {
+    color:black;
+}
+.bottom-buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.top-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.icon-text{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: white;
+    width: 320px;
+    height: 40px;
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;  
+    justify-content: flex-start;
+    gap: 10px; 
+    cursor: pointer;
+}
+.light-mode .name-right{
+    color: black;
+}
+.light-mode .icon-text{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    width: 320px;
+    height: 40px;
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;  
+    justify-content: flex-start;
+    gap: 10px; 
+    cursor: pointer;
+}
+.center-feed {
+    height: 99vh;
+    width: 600px; 
+    margin: 0 auto; 
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); 
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+}
+.light-mode .center-feed {
+    height: 99vh;
+    width: 600px; 
+    margin: 0 auto; 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); 
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+}
+.story-feed {
+    margin-bottom: 20px;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+}
+.photo-username {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-size: 20px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 0;
+}
+.light-mode .photo-username {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-size: 20px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 0;
+}
+.photo-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+}
+.username-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.photo-text{
+    font-size: 15px;
+    font-weight: 800;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.right-options{
+    margin-right: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 99vh;
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); 
+    font-weight: 500;
+    padding: 20px;
+}
+.light-mode .right-options{
+    margin-right: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 99vh;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); 
+    font-weight: 500;
+    padding: 20px;
+}
+
+.right-name{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: white;
+    width: 320px;
+    height: 40px;
+    margin: 30px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;  
+    justify-content: flex-start;
+    gap: 10px; 
+    cursor: pointer;
+}
+.right-links{
+    color: rgb(168, 168, 168);
+    text-decoration:none;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.add-comment{
+    color: white;
+    background-color: transparent;
+    width: 100%; 
+    border: none;
+    outline: none;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+}
+.light-mode .add-comment{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    width: 100%; 
+    border: none;
+    outline: none;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+}
+.icon-text:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px; 
+}
+.light-mode .icon-text:hover{
+    background-color: rgba(51, 51, 51, 0.1);
+    border-radius: 10px; 
+}
+
+.photo-buttons-container {
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 10px; 
+    width: 100%; 
+}
+.a2 {
+  color: #999 !important;
+  font-size: 12px;
+  font-weight: 300;
+  text-decoration: none;
+}
+#scrollbtn
+{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0%;
+    border-radius: 50%;
+    display:none;
+   width:30px; 
+   height:30px;
+}
+.userTypingMessage{
+    display: none;
+    color: white;
+}
+
+.heart {
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+.heart.liked {
+    color: rgb(255, 0, 0);
+    animation: beat 0.4s ease;
+    
+}
+
+@keyframes beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+  .form-control {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    text-align: left;
+    border-color: transparent !important;
+  }
+  .form-control::placeholder {
+    color: rgba(255,255,255,0.7);
+  }
+  .form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+#searchInput::placeholder {
+    color: lightgray; 
+    opacity: 1; 
+} 
+
+.user-comment {
+    display: none; 
+}
+.view-comments-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: gray;
+    cursor: pointer;
+    display: inline;
+    text-align: left;
+    appearance: none;
+    font-weight: normal; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+  }
+
+  .modal-content {
+    background: #20272B !important;
+    margin: 25% auto !important;
+    width: 55% !important;
+    height: 110% !important;
+    border-radius: 10px;
+    position: relative;
+    align-items: center !important;
+    overflow: auto;
+  }
+  #newPostHed{
+    text-align: center;
+    padding: 0% !important;
+    background-color: black;
+    width: 100%;
+    font-size: large;
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: -6px;
+    right: 14px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+#postModal{
+    position: fixed;
+    padding: 250px;
+}
+#drag-files{
+    width: 0%;
+    height: 0%;
+    display: block;
+}
+#drag-file-icon{
+   
+    height: 30%;
+    width: 60%;
+}
+#postForm{
+    padding: 6em;
+    text-align: center;
+    width: 65% !important;
+    margin-top: 100px ;
+    
+}
+.uploadBtn {
+  display: inline-block;
+  background-color: #3897f0;
+  color: white;
+  margin-top: 15px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  transition: background 0.2s ease-in-out;
+}
+
+.uploadBtn:hover {
+  background-color: #287bd1;
+}
+#continueBtn{
+    background-color: black;
+    color: #287bd1;
+    font-weight: bold;
+    margin: 0%;
+    padding: 0%;
+    left: 13px;
+    position: absolute;
+    border: none;
+}
+#modalTitle{
+    flex-direction: row;
+    text-align: center;
+    padding: 0% !important;
+    background-color: black;
+    width: 100%;
+    font-size: large;
+}
+
+.post {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.post.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.caption-box{
+    width: 90%;
+  max-width: 500px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  direction: rtl; 
+}
+.published-post > img {
+  display: block;
+  width: 100%;
+}
+
+.published-post .photo-text,
+.published-post .view-comments-btn,
+.published-post .user-comment {
+  display: block;
+  margin-top: 5px; 
+}
+
+.publish-notification {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  display: none;
+  z-index: 9999;
+  font-size: 20px;
+}
+
+.light-mode .publish-notification {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent; 
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  display: block;
+  z-index: 9999;
+  font-size: 20px;
+}
+
+.shareModalButtonsDes{
+    font-size: 70% !important;
+    text-align: center !important;
+
+}
+
+.shareModalButtons{
+    height: 52px !important;
+    width: 52px !important;
+}
+
+.staticModal{
+    position: sticky !important;
+}
+
+.modal-footer{
+ white-space: nowrap !important;
+ overflow-x: auto !important;
+
+
+}
+.shareModalButtonWrap{
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 64px;
+    margin: 0 8px !important;
+
+}
+#share{
+    display:  block !important;
+}
