@@ -28,9 +28,9 @@ This is a static application only - no DB or any backend functionality
 2. Open `index.html` or `feed.html` in your web browser/Live server extension.
 
 # Screenshots
-##Login Page:
+Login Page:
 <img width="1863" height="1060" alt="image" src="https://github.com/user-attachments/assets/029c7771-82a4-4bfc-87a0-3f46ea2352cd" />
 
-##Feed Page:
+Feed Page:
 <img width="2511" height="1252" alt="image" src="https://github.com/user-attachments/assets/fbac9132-8272-4ac9-ad45-dac279ed2f49" />
 
